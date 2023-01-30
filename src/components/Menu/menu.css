@@ -1,0 +1,64 @@
+.menu-area{
+  background-color: #1A161F;
+  width: 250px;
+  height: 100vh;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-left: 15px;
+}
+
+.logo-container div{
+  color: rgb(194, 194, 194);
+  font-size: 16px;
+  letter-spacing: 5px;
+  border-left: 3px solid rgb(182, 182, 182);
+  padding-left: 15px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+.items-area ul li{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(194, 194, 194);
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.items-area ul li:hover{
+  border-left: 2px solid rgb(194, 194, 194) ;
+}
+
+.user-area{
+  position: absolute;
+  bottom:0;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.user-area img{
+  width: 50px;
+  border-radius: 100%;
+  margin-left: 20px;
+  border: 3px solid #D1242F;
+}
+.user-area div{
+  color: rgb(194, 194, 194);
+  margin: 4px 8px;
+  font-size: 14px;
+}
+
+.genero{
+  color: #d12430a8;
+  margin: 0;
+  margin-left: 8px;
+}
