@@ -1,9 +1,40 @@
+class Movie{
+    id: Number;
+    title: String;
+    synopsis: String;
+    genre: String;
+    rating: Number;
+    imgUrl: any;
+    comments: any[];
+    likes: Number;
+
+    constructor(id : Number, 
+                title: String, 
+                synopsis: String, 
+                genre: String, 
+                rating : Number, 
+                imgUrl: any, 
+                comments: any[], 
+                likes: Number )
+    {
+        this.id = id;
+        this.title = title;
+        this.synopsis = synopsis;
+        this.genre = genre;
+        this.rating = rating;
+        this.imgUrl = imgUrl;
+        this.comments = comments;
+        this.likes = likes;
+    }
+
+}
+
 const movies = [
     {
         id: 1,
         title: "The Menu", 
-        genre: "terror",
         synopsis:"A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+        genre: "terror",
         rating: 7.2,
         imgUrl: "https://m.media-amazon.com/images/M/MV5BMzdjNjI5MmYtODhiNS00NTcyLWEzZmUtYzVmODM5YzExNDE3XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_SX300.jpg",
         comments: [],
@@ -202,7 +233,12 @@ const movies = [
 ]
 
 
-export default function getMovies(flag = "all")
+export const objMovies = movies.map(movie => new Movie(
+    movie.id, movie.title, movie.synopsis,
+    movie.genre, movie.rating, movie.imgUrl, movie.comments, movie.likes
+))
+
+export  function getMovies(flag = "all")
 {
     switch(flag)
     {
@@ -217,4 +253,4 @@ export default function getMovies(flag = "all")
     }
 }
 
-console.log(getMovies());
+
