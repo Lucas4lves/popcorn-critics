@@ -1,3 +1,5 @@
+import { Comments } from "./Comments";
+
 class Movie{
     id: Number;
     title: String;
@@ -5,8 +7,8 @@ class Movie{
     genre: String;
     rating: Number;
     imgUrl: any;
-    comments: any[];
-    likes: Number;
+    comments: Comments[];
+    likes: number;
 
     constructor(id : Number, 
                 title: String, 
@@ -14,8 +16,8 @@ class Movie{
                 genre: String, 
                 rating : Number, 
                 imgUrl: any, 
-                comments: any[], 
-                likes: Number )
+                comments: Comments[], 
+                likes: number )
     {
         this.id = id;
         this.title = title;
@@ -25,6 +27,25 @@ class Movie{
         this.imgUrl = imgUrl;
         this.comments = comments;
         this.likes = likes;
+    }
+
+    getLikes()
+    {
+        return this.likes;
+    }
+
+    increaseLikes()
+    {
+        this.likes = this.likes + 1;
+    }
+
+    decreaseLikes()
+    {
+        if(this.likes === 0)
+        {
+            this.likes = 0;
+        }
+        this.likes = this.likes - 1;
     }
 
 }
@@ -247,7 +268,7 @@ export function getMoviesByGenre(flag = "all")
             return objMovies;
         case flag:
             console.log("Search by", flag + ":");
-            return objMovies.filter(movie => movie.genre == flag);
+            return objMovies.filter(movie => movie.genre === flag);
         default:
             break;
     }
