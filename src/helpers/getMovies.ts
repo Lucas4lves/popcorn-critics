@@ -238,19 +238,24 @@ export const objMovies = movies.map(movie => new Movie(
     movie.genre, movie.rating, movie.imgUrl, movie.comments, movie.likes
 ))
 
-export  function getMovies(flag = "all")
+export function getMoviesByGenre(flag = "all")
 {
     switch(flag)
     {
         case "all":
             console.log("Search by", flag + ":");
-            return movies;
+            return objMovies;
         case flag:
             console.log("Search by", flag + ":");
-            return movies.filter(movie => movie.genre == flag);
+            return objMovies.filter(movie => movie.genre == flag);
         default:
             break;
     }
+}
+
+export function getMoviesById(id : Number)
+{
+    return objMovies.filter(movie => movie.id === id);
 }
 
 
