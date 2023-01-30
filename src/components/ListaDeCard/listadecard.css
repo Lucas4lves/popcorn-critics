@@ -2,13 +2,15 @@
 
 .list-container{
   width: 920px;
-  height: 280px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   overflow-x: scroll;
-  margin-right: 65px;
+  overflow-y: hidden;
+  margin-right: 65px; 
 }
+
 
 .list-container::-webkit-scrollbar{
   display: none;
@@ -19,5 +21,51 @@
   height: 95%;
   margin: 0px 15px;
   border-radius: 8px;
-  border: 1px solid white;
+  -webkit-box-shadow: 5px 5px 15px 5px #d124302a; 
+  box-shadow: 5px 5px 15px 5px #d1243018;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.card-container img{
+  width: 200px;
+  height:100% ;
+  border-radius: 8px;
+  display: flex;
+  
+}
+
+.card-title{
+  font-size: 20px;
+  top: 0;
+  color: rgba(255, 255, 255, 0.925);
+  z-index: 10;
+  padding: 0px 10px;
+}
+
+.card-genero{
+  z-index: 10;
+  font-size: 16px;
+  top: 0;
+  color: rgba(255, 255, 255, 0.781);
+  z-index: 10;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.card-rating{
+  font-size: 20px;
+  margin-left: 130px;
+  margin-bottom: 190px;
+  color: rgba(255, 255, 255, 0.925);
+  z-index: 10;
+  padding: 0px 10px;
+  display: flex;
+}
+.card-rating span{
+  color: rgba(255, 255, 0, 0.877);
+  padding: 0px 5px;
+  margin-right: 5px;
 }
