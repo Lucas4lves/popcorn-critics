@@ -1,0 +1,23 @@
+
+
+.list-container{
+  width: 920px;
+  height: 280px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  overflow-x: scroll;
+  margin-right: 65px;
+}
+
+.list-container::-webkit-scrollbar{
+  display: none;
+}
+
+.card-container{
+  min-width: 200px;
+  height: 95%;
+  margin: 0px 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
