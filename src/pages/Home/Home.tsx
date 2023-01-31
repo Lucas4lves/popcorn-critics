@@ -1,14 +1,29 @@
 import { Destaques } from "../../components/Destaques/Destaques"
-import { ListaDeCard } from "../../components/ListaDeCard/index.tsx"
+import { GridDeCard } from "../../components/GridDeCard"
+import { ListaDeCard } from "../../components/ListaDeCard/index"
 import './home.css'
 
 
-export const Home = ()=>{
+export const Home = ({filtrostate}:any)=>{
+  function view(){
+    if(filtrostate == 'all'){
+      return (
+        <div>
+          <Destaques/>
+          <ListaDeCard/>
+        </div>
+      )
+    }  
+    else{
+      return(
+        <GridDeCard cat = {filtrostate} />
+      )
+    }  
+  }
   return(
     <>
       <div className="home">
-        <Destaques/>
-        <ListaDeCard/>
+        {view()}
       </div>
     </>
   )

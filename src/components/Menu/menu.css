@@ -1,6 +1,6 @@
 .menu-area{
   background-color: #1A161F;
-  width: 250px;
+  width: 320px;
   height: 100vh;
 }
 .logo-container{
@@ -17,6 +17,7 @@
   letter-spacing: 5px;
   border-left: 3px solid rgb(182, 182, 182);
   padding-left: 15px;
+  padding-right: 8px;
 }
 .logo{
   width: 50px;
@@ -61,4 +62,11 @@
   color: #d12430a8;
   margin: 0;
   margin-left: 8px;
+}
+
+.N{
+  font-size: 50px;
+  position: absolute;
+  top: 11px;
+  color: rgba(255, 255, 255, 0.274);
 }

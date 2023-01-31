@@ -2,23 +2,23 @@ import './menu.css'
 import { AiFillHome } from 'react-icons/ai';
 import logo from'../../assets/logo-popcorn.svg'
 //menu lateral da aplicação
-export const Menu = ()=>{
+export const Menu = ({setFilter}:any)=>{
   return(
     <>
       <div className='menu-area'>
           <div className='logo-container'>
               <img src={logo} alt=""  className='logo'/>
               <div>
-                  POPCORN CRITICS
+                  POPCORN'<span className='N'>N</span> CRITICS
               </div>
           </div>
           <div className='items-area'>
             <ul>
-              <li>Todos</li>
-              <li>Ação</li>
-              <li>Romance</li>
-              <li>Terror</li>
-              <li>Drama</li>
+              <li onClick={()=> setFilter('all')}>Todos</li>
+              <li onClick={()=> setFilter('action')}>Ação</li>
+              <li onClick={()=> setFilter('romance')}>Romance</li>
+              <li onClick={()=> setFilter('terror')}>Terror</li>
+              <li onClick={()=> setFilter('drama')}>Drama</li>
             </ul>
           </div>
       </div>

@@ -1,15 +1,21 @@
 
+import { AiFillStar } from 'react-icons/ai';
 
 
-export const CardFilme = ()=>{
+
+export const CardFilme = ({obj}:any)=>{
+  let title = obj.genre
   return(
     <>
-      <div className="card-container" style={{backgroundImage: `url("https://m.media-amazon.com/images/M/ MV5BMzdjNjI5MmYtODhiNS00NTcyLWEzZmUtYzVmODM5YzExNDE3XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_SX300.jpg")`}}>
-              <div className='card-rating'>7.2 <span> <AiFillStar/> </span></div>
-              <div className='card-title'>The Menu</div>
-              <div className='card-genero'>Terror</div>
-              
+      <div className="card-container" style={{backgroundImage: `url(${obj.imgUrl})`}}>
       </div> 
+      <div className='mascara'>
+        <div className='card-rating'>{obj.rating}<span> <AiFillStar/> </span></div>
+        <div>
+          <div className='card-title'>{obj.title}</div>
+          <div className='card-genero'>{obj.genre}</div>
+        </div>
+      </div>
     </>
   )
 }
