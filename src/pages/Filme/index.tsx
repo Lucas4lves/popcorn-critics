@@ -19,7 +19,7 @@ export const Filme = ({filme}:any)=>{
           Comentarios
           <div className='novo-comentario'>
           <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" className='user-img'/>
-          <textarea name="" id="" cols="30" rows="10" className='novo-comentario-input'></textarea>
+          <textarea name="" id="" className='novo-comentario-input'></textarea>
           </div>
         </div>
         <Comentario/>
