@@ -1,0 +1,80 @@
+.filme-info{
+  width: 900px;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.filme-info img{
+  width: 200px;
+  margin: 20px;
+}
+
+
+.filme-info-container{
+  display: flex;
+}
+
+.filme-info-title{
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.filme-info-genero{
+  color: rgb(231, 15, 15);
+  margin:20px 0px;
+}
+
+
+.filme-info-container p{
+  color: rgba(255, 255, 255, 0.589);
+}
+
+.card-rating{
+  color: rgba(255, 255, 255, 0.925);
+  z-index: 10;
+  display: flex;;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.card-rating span{
+  color: rgba(255, 255, 0, 0.568);
+  padding: 0px 5px;
+  margin-right: 5px;
+}
+
+.comentarios{
+  color: white;
+  margin: 20px;
+  font-size: 24px;
+  padding-left: 20px;
+  border-left: 3px solid rgb(196, 22, 22);
+}
+
+.novo-comentario{
+  width: 900px;
+  margin-top: 15px;
+  border-radius: 8px;
+  height: 100px;
+  background-color: #1A161F;
+  display: flex;
+  align-items: center;
+}
+
+
+.user-img{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 100%;
+  border: 3px solid #D1242F;
+}
+
+.novo-comentario-input{
+  width: 500px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.014);
+  color: white;
+  outline: none;
+  border-radius: 8px;
+  border-color: rgba(255, 0, 0, 0.24);
+}
