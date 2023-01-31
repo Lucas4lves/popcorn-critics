@@ -10,7 +10,7 @@ export const Home = ({filtrostate}:any)=>{
       return (
         <div>
           <Destaques/>
-          <ListaDeCard/>
+            <ListaDeCard />
         </div>
       )
     }  
