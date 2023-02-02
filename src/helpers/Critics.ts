@@ -4,7 +4,7 @@ export default class Critics
     constructor(private critcisList : Array<Critic>)
     {}
 
-    appendTo(critic : Critic)
+    appendTo(critic : Critic) : void
     {
         this.critcisList.push(critic);
     }
