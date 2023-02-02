@@ -1,10 +1,10 @@
 import Critic from "./Critic";
 export default class Critics
 {
-    constructor(private critcisList : Array<Critic>)
+    constructor(private critcisList : Array<any>)
     {}
 
-    appendTo(critic : Critic)
+    appendTo(critic : Critic) : void
     {
         this.critcisList.push(critic);
     }

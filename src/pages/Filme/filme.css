@@ -1,9 +1,9 @@
 .filme-info{
   width: 1100px;
-  height: 700px;
-  margin-top: 30px;
+  height: 100vh;
   margin-left: 40px;
   overflow-y: scroll;
+  padding-bottom: 20px;
 }
 
 .filme-info::-webkit-scrollbar{

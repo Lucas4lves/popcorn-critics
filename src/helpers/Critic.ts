@@ -1,11 +1,17 @@
 export default class Critic{
-    content: string;
+    content: any;
+    likes : any;
+    dislikes : any;
+    impressions : any; 
 
 
-    constructor(content: string)
+    constructor(content: any)
     {
         this.content = content;
-    }
+        this.likes = 0;
+        this.dislikes = 0;
+        this.impressions = this.likes + this.dislikes;
+    }   
 
     // getId()
     // {
@@ -19,14 +25,14 @@ export default class Critic{
     {
         return this.content;
     }
-    // getLikes()
-    // {
-    //     return this.likes;
-    // }
-    // getDislikes()
-    // {
-    //     return this.dislikes; 
-    // }
+    getLikes()
+    {
+        return this.likes;
+    }
+    getDislikes()
+    {
+        return this.dislikes; 
+    }
 
     // setAuthor(value : string)
     // {
@@ -36,14 +42,14 @@ export default class Critic{
     {
         this.content = value;
     }
-    // setLikes()
-    // {
-    //     this.likes++;
-    // }
+    setLikes()
+    {
+        this.likes++;
+    }
 
-    // setDislikes()
-    // {
-    //     this.dislikes++;
-    // }
+    setDislikes()
+    {
+        this.dislikes++;
+    }
 
 }   
