@@ -1,4 +1,4 @@
-import { Comments } from "./Comments";
+import  Comment  from "./Critic";
 
 class Movie{
     id: any;
@@ -7,7 +7,7 @@ class Movie{
     genre: String;
     rating: Number;
     imgUrl: any;
-    comments: Comments[];
+    comments: Comment[];
     likes: number;
 
     constructor(id : any, 
@@ -16,7 +16,7 @@ class Movie{
                 genre: String, 
                 rating : Number, 
                 imgUrl: any, 
-                comments: Comments[], 
+                comments: Comment[], 
                 likes: number )
     {
         this.id = id;
