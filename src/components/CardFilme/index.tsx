@@ -1,8 +1,10 @@
 import { AiFillStar } from 'react-icons/ai';
-import { BrowserRouter, Link, Route, Routes} from "react-router-dom"
+import { Link } from 'react-router-dom';
+
+
 export const CardFilme = ({obj}:any)=>{
   return(
-    <>
+          <>
         
           <div className="card-container" style={{backgroundImage: `url(${obj.imgUrl})`}}>
           </div> 
@@ -16,7 +18,7 @@ export const CardFilme = ({obj}:any)=>{
           </div>
           </Link>
 
-       
-    </>
+          </>
+
   )
 }
