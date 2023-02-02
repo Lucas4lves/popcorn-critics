@@ -1,22 +1,24 @@
+import { useParams } from "react-router"
 import { Destaques } from "../../components/Destaques/Destaques"
 import { GridDeCard } from "../../components/GridDeCard"
 import { ListaDeCard } from "../../components/ListaDeCard/index"
 import './home.css'
 
 
-export const Home = ({filtrostate}:any)=>{
+export const Home = ()=>{
+  const {filtro} = useParams()
   function view(){
-    if(filtrostate == 'all'){
+    if(filtro == 'all'){
       return (
         <div>
           <Destaques/>
-            <ListaDeCard />
+          <ListaDeCard />
         </div>
       )
     }  
     else{
       return(
-        <GridDeCard cat = {filtrostate} />
+        <GridDeCard cat = {filtro} />
       )
     }  
   }

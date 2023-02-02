@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 export const CardFilme = ({obj}:any)=>{
   return(
           <>
-        
+          <Link to={`/movie/${obj.id}`} className='link'>
           <div className="card-container" style={{backgroundImage: `url(${obj.imgUrl})`}}>
           </div> 
-          <Link to={`/movie/${obj.id}`} className='link'>
+          </Link>
           <div className='mascara'>
             <div className='card-rating'>{obj.rating}<span> <AiFillStar/> </span></div>
             <div>
@@ -16,7 +16,7 @@ export const CardFilme = ({obj}:any)=>{
               <div className='card-genero'>{obj.genre}</div>
             </div>
           </div>
-          </Link>
+          
 
           </>
 

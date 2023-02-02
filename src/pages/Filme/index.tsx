@@ -34,6 +34,11 @@ export const Filme = ()=>{
           </div>
         </div>
         <Comentario/>
+        <Comentario/>
+        <Comentario/>
+        <Comentario/>
+        <Comentario/>
+        <Comentario/>
       </div>
     </>
   )

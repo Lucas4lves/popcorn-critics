@@ -13,7 +13,7 @@ export const AppRouter = ()=>{
       <BrowserRouter>
         <Menu setFilter = {setFiltro}/>
         <Routes>
-          <Route path="/" element = {<Home filtrostate = {filtro}/>}/>
+          <Route path="/:filtro" element = {<Home/>}/>
           <Route path="/movie/:id" element = {<Filme/>}/>
         </Routes>
       </BrowserRouter>

@@ -1,6 +1,6 @@
 .menu-area{
   background-color: #1A161F;
-  width: 320px;
+  max-width: 280px;
   height: 100vh;
 }
 .logo-container{
@@ -32,6 +32,9 @@
   font-weight: 300;
   padding: 10px;
   cursor: pointer;
+}
+Link{
+  text-decoration: none;
 }
 
 .items-area ul li:hover{

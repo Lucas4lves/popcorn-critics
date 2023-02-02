@@ -1,0 +1,27 @@
+.comentario-area{
+  width: 900px;
+  margin-left: 40px;
+  height: auto;
+  background-color: #1A161F;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.comentario-area h4{
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.comentario-area p{
+  margin: 0px;
+  width: 700px;
+  color: rgba(255, 255, 255, 0.589);
+}
+.like{
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
