@@ -1,8 +1,15 @@
 import './filme.css'
 import { AiFillStar } from 'react-icons/ai';
 import { Comentario } from '../../components/Comentario';
+import { useParams } from 'react-router';
+import {getMoviesById} from '../../helpers/getMovies'
+export const Filme = ()=>{
+  const {id} = useParams()
+  const teste:any = getMoviesById(id)
+  const filme = teste[0]
 
-export const Filme = ({filme}:any)=>{
+  console.log(filme);
+  
   return(
     <>
       <div className="filme-info">
@@ -19,7 +26,11 @@ export const Filme = ({filme}:any)=>{
           Comentarios
           <div className='novo-comentario'>
           <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" className='user-img'/>
-          <textarea name="" id="" className='novo-comentario-input'></textarea>
+         
+            <div className='avaliacao'>
+              <textarea name="" id="" className='novo-comentario-input'></textarea>
+              <button>Enviar</button>
+            </div>
           </div>
         </div>
         <Comentario/>

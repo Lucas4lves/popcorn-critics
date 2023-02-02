@@ -1,7 +1,7 @@
 import { Comments } from "./Comments";
 
 class Movie{
-    id: Number;
+    id: any;
     title: String;
     synopsis: String;
     genre: String;
@@ -10,7 +10,7 @@ class Movie{
     comments: Comments[];
     likes: number;
 
-    constructor(id : Number, 
+    constructor(id : any, 
                 title: String, 
                 synopsis: String, 
                 genre: String, 
@@ -274,9 +274,9 @@ export function getMoviesByGenre(flag = "all")
     }
 }
 
-export function getMoviesById(id : Number)
+export function getMoviesById(id : any)
 {
-    return objMovies.filter(movie => movie.id === id);
+    return objMovies.filter(movie => movie.id == id);
 }
 
 

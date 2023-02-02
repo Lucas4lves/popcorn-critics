@@ -7,12 +7,12 @@ import { objMovies } from './helpers/getMovies';
 
 
 function App() {
-  const [filtro,setFiltro] = useState('all')
+  
   return (
     <div className="App">
       <Menu setFilter = {setFiltro}/>
       {/* <Home filtrostate = {filtro} setFilter = {setFiltro}/> */}
-      <Filme filme = {objMovies[6]}/>
+      <Filme/>
     </div>
   )
 }

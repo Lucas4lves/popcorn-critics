@@ -60,6 +60,7 @@
 .card-rating{
   color: rgba(255, 255, 255, 0.925);
   z-index: 10;
+  font-size: 20px;
   display: flex;
   justify-content: end;
   margin-top: 20px;
@@ -72,6 +73,7 @@
 
 .mascara{
    width: 200px;
+   height: 200px;
   z-index: 50;
   margin-left: -215px;
   display: flex;
@@ -80,7 +82,9 @@
   cursor: pointer ;
 }
 
-
+.link{
+  text-decoration: none;
+}
 
 .grid-container{
   width: 920px;

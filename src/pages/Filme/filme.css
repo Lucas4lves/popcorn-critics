@@ -55,7 +55,7 @@
   width: 900px;
   margin-top: 15px;
   border-radius: 8px;
-  height: 100px;
+  height: 120px;
   background-color: #1A161F;
   display: flex;
   align-items: center;
@@ -70,11 +70,53 @@
 }
 
 .novo-comentario-input{
-  width: 500px;
+  width: 750px;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.014);
-  color: white;
+  color: rgba(255, 255, 255, 0.664);
   outline: none;
   border-radius: 8px;
   border-color: rgba(255, 0, 0, 0.24);
+  font-family: sans-serif;
+}
+
+.novo-comentario input{
+  width: 60px;
+  height: 30px;
+  background-color: rgba(255, 240, 240, 0);
+  border: 1px solid rgba(255, 0, 0, 0.418);
+  border-radius: 2px;
+  outline: none;
+  color: white;
+}
+
+.avaliacao{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.avaliacao label{
+  margin: 5px 0;
+  color: rgba(255, 255, 255, 0.514);
+  
+}
+
+button{
+  background-color: transparent;
+  border:1px solid #d1243057;
+  color: rgba(255, 255, 255, 0.37);
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+  margin: 5px;
+  padding: 5px 5px;
+  outline: 0;
+}
+
+button:hover{
+  background-color: #D1242F;
+  color: white
+  ;
 }
