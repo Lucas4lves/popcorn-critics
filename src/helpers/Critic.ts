@@ -1,11 +1,11 @@
 export default class Critic{
-    content: string;
-    likes : number;
-    dislikes : number;
-    impressions : number; 
+    content: any;
+    likes : any;
+    dislikes : any;
+    impressions : any; 
 
 
-    constructor(content: string)
+    constructor(content: any)
     {
         this.content = content;
         this.likes = 0;

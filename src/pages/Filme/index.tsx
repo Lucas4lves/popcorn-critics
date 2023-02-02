@@ -4,6 +4,7 @@ import { Comentario } from '../../components/Comentario';
 import { useParams } from 'react-router';
 import {getMoviesById} from '../../helpers/getMovies'
 import Critic from '../../helpers/Critic';
+import Critics from '../../helpers/Critics';
 import { useState } from 'react';
 
 
@@ -12,9 +13,7 @@ export const Filme = ()=>{
   const teste:any = getMoviesById(id)
   const filme = teste[0];
 
-  // const [critics, setCritics] = useState([])
-  let critics : Array<Critic> = [];
-
+  const [critics, setCritics] = useState<any[]>([])
 
   function getCriticsContent()
   {
@@ -26,9 +25,10 @@ export const Filme = ()=>{
   
   function populateCritics()
   {
-    critics.push(getCriticsContent())
-    console.log(critics);
-    
+    setCritics([
+      ...critics,
+      getCriticsContent()
+    ])
   }
 
   return(
@@ -54,17 +54,9 @@ export const Filme = ()=>{
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-=======
-        
-        <Comentario/>
-        <Comentario/>
-        <Comentario/>
-        <Comentario/>
-        <Comentario/>
-        <Comentario/>
->>>>>>> de806a2c9cbae6d26d3056799d9d1f226f83d37b
+        {critics.map((critic, index) => {
+          return <Comentario obj={critic} key ={index}  />
+        })}
       </div>
     </>
   )

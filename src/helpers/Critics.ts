@@ -1,7 +1,7 @@
 import Critic from "./Critic";
 export default class Critics
 {
-    constructor(private critcisList : Array<Critic>)
+    constructor(private critcisList : Array<any>)
     {}
 
     appendTo(critic : Critic) : void
