@@ -42,12 +42,12 @@ export default class Critic{
     {
         this.content = value;
     }
-    setLikes()
+    increaseLikes()
     {
         this.likes++;
     }
 
-    setDislikes()
+    increaseDislikes()
     {
         this.dislikes++;
     }

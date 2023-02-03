@@ -4,6 +4,9 @@ export class User
     username: String;
     favoriteGenre: String;
     favoriteMovies: any[];
+    following: User[];
+    followers: User[];
+
 
     constructor(id: Number, username: String, favoriteGenre: String, favoriteMovies: any[])
     {
@@ -11,29 +14,41 @@ export class User
         this.username = username;
         this.favoriteGenre = favoriteGenre;
         this.favoriteMovies = favoriteMovies;
+        this.following = [];
+        this.followers = [];
     }
+
 }
 
 const users = [
     {id: 1,
     username: "Juliana Santos",
     favoriteGenre: "Terror",
-    favoriteMovies: []
+    favoriteMovies: [],
+    following : [],
+    followers : [],
     },
     {id: 2,
     username: "Abner Ferreira",
     favoriteGenre: "Comédia",
-    favoriteMovies: []
+    favoriteMovies: [],
+    following : [],
+    followers : [],
+    
     },
     {id: 3,
     username: "Mikael Previtera",
     favoriteGenre: "Ação",
-    favoriteMovies: []
+    favoriteMovies: [],
+    following : [],
+    followers : [],
     },
     {id: 4,
     username: "Jhon Previtera",
     favoriteGenre: "Romance",
-    favoriteMovies: []
+    favoriteMovies: [],
+    following : [],
+    followers : [],
     },
 ]
 
