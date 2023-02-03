@@ -2,13 +2,16 @@ import { useParams } from "react-router"
 import { Destaques } from "../../components/Destaques/Destaques"
 import { GridDeCard } from "../../components/GridDeCard"
 import { ListaDeCard } from "../../components/ListaDeCard/index"
+import { Search } from "../../components/Search"
 import './home.css'
 
 
 export const Home = ()=>{
-  const {filtro} = useParams()
+  const {filtro} = useParams() 
+  console.log(filtro);
+  
   function view(){
-    if(filtro == 'all'){
+    if(filtro == undefined){
       return (
         <div>
           <Destaques/>
@@ -27,6 +30,7 @@ export const Home = ()=>{
       <div className="home">
         {view()}
       </div>
+      <Search/>
     </>
   )
 }

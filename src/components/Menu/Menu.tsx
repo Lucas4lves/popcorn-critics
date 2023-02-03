@@ -10,12 +10,14 @@ export const Menu = ({setFilter}:any)=>{
   return(
     <>
       <div className='menu-area'>
+          <Link to={'/'} className = 'link'>
           <div className='logo-container'>
               <img src={logo} alt=""  className='logo'/>
               <div>
                   POPCORN'<span className='N'>N</span> CRITICS
               </div>
           </div>
+          </Link>
           <div className='items-area'>
             <ul>
               <Link to={'/all'} className='link'><li>Todos</li></Link>
@@ -30,7 +32,7 @@ export const Menu = ({setFilter}:any)=>{
       <div className='user-area'>
           <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" />
           <div>
-            <div>Monkey D. Luffy</div>
+            <Link to={'/user'} className = 'link'><div>Monkey D. Luffy</div></Link>
             <h4 className='genero'>Ação</h4>
           </div>
       </div>

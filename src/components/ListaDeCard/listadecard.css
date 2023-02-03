@@ -2,7 +2,7 @@
 
 .list-container{
   width: 920px;
-  height: 310px;
+  height: 380px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
@@ -17,6 +17,7 @@
 }
 .grid-container::-webkit-scrollbar{
   display: none;
+
 }
 .card-container{
   background-size: cover;
@@ -95,5 +96,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-right: 65px; 
+  margin-right: 65px;
+  margin-bottom: 20px; 
 }

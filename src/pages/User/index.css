@@ -1,0 +1,50 @@
+.user-conteiner{
+  margin: 50px;
+  display: flex;
+  
+}
+
+.user-conteiner img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.items{
+  margin-left: 20px;
+}
+.user-conteiner div h1{
+  color: rgba(255, 255, 255, 0.938);
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.user-conteiner div p{
+  width: 650px;
+  color: rgba(255, 255, 255, 0.534);
+}
+.user-conteiner div h3{
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 16px;
+}
+
+.favoritos{
+  margin: 20px;
+}
+
+.favoritos h1{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+
+  font-size: 20px;
+  border-left: 3px solid rgb(201, 42, 42);
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.829);
+}
+
+.seguidores{
+  color:  rgb(201, 42, 42);
+  margin: 5px;
+  padding-top : 20px;
+}

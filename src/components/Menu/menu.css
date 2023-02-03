@@ -1,6 +1,7 @@
 .menu-area{
   background-color: #1A161F;
   max-width: 280px;
+  min-width: 280px;
   height: 100vh;
 }
 .logo-container{
@@ -72,4 +73,8 @@ Link{
   position: absolute;
   top: 11px;
   color: rgba(255, 255, 255, 0.274);
+}
+
+.link{
+  text-decoration: none;
 }
