@@ -3,6 +3,7 @@ import { Destaques } from "../../components/Destaques/Destaques"
 import { GridDeCard } from "../../components/GridDeCard"
 import { ListaDeCard } from "../../components/ListaDeCard/index"
 import { Search } from "../../components/Search"
+import { getMoviesByGenre } from "../../helpers/getMovies"
 import './home.css'
 
 
@@ -15,7 +16,7 @@ export const Home = ()=>{
       return (
         <div>
           <Destaques/>
-          <ListaDeCard />
+          <ListaDeCard lista={getMoviesByGenre("all")}/>
         </div>
       )
     }  

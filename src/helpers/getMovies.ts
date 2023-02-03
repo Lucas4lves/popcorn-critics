@@ -282,7 +282,8 @@ export function getMoviesById(id : any)
 export function searchMovieByParam(queryParam : string) : Array<Movie>
 {
     let param = queryParam.toLowerCase();
-    let result = objMovies.filter( movie => movie.title.toLowerCase().includes(param));
+    let result = objMovies.filter( movie => 
+        movie.title.toLowerCase().includes(param) || movie.synopsis.toLowerCase().includes(param));
     return result;
 }
 

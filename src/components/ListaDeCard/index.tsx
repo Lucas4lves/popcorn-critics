@@ -1,14 +1,13 @@
 import './listadecard.css'
 import { CardFilme } from '../CardFilme';
-import { objMovies,getMoviesById } from '../../helpers/getMovies';
+import { objMovies,getMoviesById, getMoviesByGenre } from '../../helpers/getMovies';
 import {} from '../../helpers/getMovies'
-export const ListaDeCard = ()=>{
-  let arr = [8,9,5,7,9,10]
+export const ListaDeCard = ({lista})=>{
   return(
     <>
       <div className="list-container">
-        {arr.map( i => 
-           <CardFilme obj = {getMoviesById(i)[0]}/>
+        {lista.map(item  => 
+           <CardFilme obj = {item}/>
         )}
       </div>
     </>

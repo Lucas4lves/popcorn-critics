@@ -11,7 +11,7 @@ import { useState } from 'react';
 export const Filme = ()=>{
   const {id} = useParams()
   const teste:any = getMoviesById(id)
-  const filme = teste[0];
+  const filme = teste;
 
   const [critics, setCritics] = useState<any[]>([])
 

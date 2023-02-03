@@ -6,13 +6,10 @@ export const Search = ()=>{
 
   const [started,setStarted] =  useState(false)
   const [query,setQuery] = useState('')
-  let teste = "teste"
+  const [results, setResults] = useState([])
   function search(){
     setStarted(true)
   }
-
-  
-
   function renderizaResultado(x : any){
     if(started){
       return(
@@ -20,10 +17,10 @@ export const Search = ()=>{
           <div className='results'>
           <div>
               <h1>Resultados</h1>
-            <ListaDeCard  />
+            <ListaDeCard lista={results}/>
           </div>
       </div>
-      <div className='escurecedor'>
+      <div className='escurecedor' onClick={() => setStarted(false)}>
 
       </div>
         </div>
@@ -34,12 +31,14 @@ export const Search = ()=>{
   return(
     <>
       <div className='search-area longo'>
-        <input type="text" value={query} onChange={(e)=> {
+        <input type="text" value={query} onInput={(e) =>{
+           setQuery(e.target.value)
+           setResults(searchMovieByParam(query))
+        }} onChange={()=> {
           setStarted(true)
-          setQuery(e.target.value)
-           } }/>
+           }}/>
       </div>  
-      {renderizaResultado(query)}
+      {started && renderizaResultado(query)}
     </>
   )
 }
