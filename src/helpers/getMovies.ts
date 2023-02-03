@@ -1,6 +1,6 @@
 import  Comment  from "./Critic";
 
-class Movie{
+export class Movie{
     id: any;
     title: String;
     synopsis: String;
@@ -276,7 +276,7 @@ export function getMoviesByGenre(flag = "all")
 
 export function getMoviesById(id : any)
 {
-    return objMovies.filter(movie => movie.id == id);
+    return objMovies.filter(movie => movie.id == id)[0];
 }
 
 export function searchMovieByParam(queryParam : string) : Array<Movie>
