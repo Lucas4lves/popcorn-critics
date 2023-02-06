@@ -6,7 +6,7 @@ import { AiFillLike } from 'react-icons/ai';
 //deslike
 import { AiOutlineDislike } from 'react-icons/ai';
 import { AiFillDislike } from 'react-icons/ai';
-
+import { users } from '../../data/users';
 export const Comentario = ({obj} : any, key : any)=>{
   // id content respostas author numero de likes e deslikes
   const [isLike,setIsLike] = useState(false)
@@ -43,9 +43,9 @@ export const Comentario = ({obj} : any, key : any)=>{
   return(
     <>
       <div key={key} className='comentario-area'>
-        <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" className='user-img'/>
+        <img src={users[3].profilePicUrl} alt="" className='user-img'/>
         <div>
-        <h4>Monkey D. Luffy</h4>
+        <h4>{users[3].username}</h4>
         <p>{obj.content}</p>
         </div>
         <div className='like' onClick={()=>{

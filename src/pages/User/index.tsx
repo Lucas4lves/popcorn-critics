@@ -1,25 +1,28 @@
+import { useParams } from 'react-router'
 import { ListaDeCard } from '../../components/ListaDeCard'
 import { getMoviesByGenre } from '../../helpers/getMoviesZod' 
 import './index.css'
-
+import { getUserById } from '../../helpers/getUsersZod'
 export const User = ()=>{
+  const {id} = useParams()
+  let user = getUserById(Number(id))
   return(
     <>
       <div>
         <div className='user-conteiner'>
-            <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" />
+            <img src={user.profilePicUrl} alt="" />
             <div className='items'>
               <div>
-                <h1>Macaco do Luffy</h1>
-                <span className='seguidores'>95 seguidores</span>
+                <h1>{user.username}</h1>
+                <span className='seguidores'>{user.followers} seguidores</span>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem, ducimus natus libero, quaerat vero et laudantium commodi quo quos odio explicabo aspernatur harum saepe necessitatibus laboriosam? Delectus, impedit nobis!</p>
-              <h3>Meu gênero favorito é Ação</h3>
+              <p>{user.bio}</p>
+              <h3>Meu gênero favorito é {user.favoriteGenre}</h3>
             </div>
         </div>
         <div className='favoritos'>
           <h1>Filmes favoritos</h1>
-          <ListaDeCard lista = {getMoviesByGenre('action')}/>
+          <ListaDeCard lista = {getMoviesByGenre(user.favoriteGenre)}/>
         </div>
       </div>
     </>

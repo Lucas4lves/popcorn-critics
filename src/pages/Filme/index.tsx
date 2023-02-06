@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 import { getMoviesById } from '../../helpers/getMoviesZod';
 import Critic from '../../helpers/Critic';
 import { useState } from 'react';
-
+import { users } from '../../data/users';
 
 export const Filme = ()=>{
   const {id} = useParams()
@@ -45,7 +45,7 @@ export const Filme = ()=>{
         <div className='comentarios'>
           Comentarios
           <div className='novo-comentario'>
-          <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" className='user-img'/>
+          <img src={users[3].profilePicUrl} alt="" className='user-img'/>
          
             <div className='avaliacao'>
               <textarea name="" id="" className='novo-comentario-input'></textarea>

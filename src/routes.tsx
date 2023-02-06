@@ -21,7 +21,7 @@ export const AppRouter = ()=>{
           <Route path="/" element = {<Home/>}/>
           <Route path="/:filtro" element = {<Home/>}/>
           <Route path="/movie/:id" element = {<Filme/>}/>
-          <Route path="/user" element = {<User/>}/>
+          <Route path="/user/:id" element = {<User/>}/>
           <Route path="*" element = {<Home/>}/>
         </Routes>
       </BrowserRouter>

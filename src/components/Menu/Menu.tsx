@@ -2,7 +2,7 @@ import './menu.css'
 import { AiFillHome } from 'react-icons/ai';
 import logo from'../../assets/logo-popcorn.svg'
 import { Link } from 'react-router-dom';
-
+import { users } from '../../data/users';
 
 
 //menu lateral da aplicação
@@ -30,10 +30,10 @@ export const Menu = ({setFilter}:any)=>{
       </div>
 
       <div className='user-area'>
-          <img src="https://img.assinaja.com/upl/lojas/mundosinfinitos/imagens/foto-one-piece.png" alt="" />
+          <img src={users[3].profilePicUrl} alt="" />
           <div>
-            <Link to={'/user'} className = 'link'><div>Monkey D. Luffy</div></Link>
-            <h4 className='genero'>Ação</h4>
+            <Link to={'/user/4'} className = 'link'><div>{users[3].username}</div></Link>
+            <h4 className='genero'>{users[3].favoriteGenre}</h4>
           </div>
       </div>
     </>
