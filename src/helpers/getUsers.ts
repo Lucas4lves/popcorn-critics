@@ -2,16 +2,16 @@ import {Movie} from "./getMovies"
 
 export class User
 {
-    id: Number;
+    id: number;
     username: String;
     profilePicUrl : string;
     bio : string;
     favoriteGenre: String;
     favoriteMovies: Movie[];
-    followers: User[];
+    followers: number;
 
 
-    constructor(id: Number, username: String, profilePicUrl : string, bio:string, favoriteGenre: String, favoriteMovies: Movie[])
+    constructor(id: number, username: String, profilePicUrl : string, bio:string, favoriteGenre: String, favoriteMovies: Movie[])
     {
         this.id = id;
         this.username = username;
@@ -19,7 +19,7 @@ export class User
         this.bio = bio;
         this.favoriteGenre = favoriteGenre;
         this.favoriteMovies = favoriteMovies;
-        this.followers = [];
+        this.followers = 0;
     }
 
 }
@@ -62,10 +62,12 @@ const users = [
 
 export const objUsers = users.map(user => new User(user.id, user.username, user.bio, user.profilePicUrl, user.favoriteGenre, user.favoriteMovies));
 
-export function getUserById(id : Number) : User
+export function getUserById(id : number) : User
 {
     let result = objUsers.filter(user => user.id == id)[0];
     return result; 
 }
 
 
+// tirar users para arquivo de dados
+//

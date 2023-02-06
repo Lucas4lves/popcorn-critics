@@ -7,7 +7,6 @@ export class Movie{
     genre: String;
     rating: Number;
     imgUrl: any;
-    comments: Comment[];
     likes: number;
 
     constructor(id : any, 
@@ -16,7 +15,6 @@ export class Movie{
                 genre: String, 
                 rating : Number, 
                 imgUrl: any, 
-                comments: Comment[], 
                 likes: number )
     {
         this.id = id;
@@ -25,7 +23,6 @@ export class Movie{
         this.genre = genre;
         this.rating = rating;
         this.imgUrl = imgUrl;
-        this.comments = comments;
         this.likes = likes;
     }
 
@@ -256,7 +253,7 @@ const movies = [
 
 export const objMovies = movies.map(movie => new Movie(
     movie.id, movie.title, movie.synopsis,
-    movie.genre, movie.rating, movie.imgUrl, movie.comments, movie.likes
+    movie.genre, movie.rating, movie.imgUrl,movie.likes
 ))
 
 export function getMoviesByGenre(flag = "all")
@@ -283,8 +280,12 @@ export function searchMovieByParam(queryParam : string) : Array<Movie>
 {
     let param = queryParam.toLowerCase();
     let result = objMovies.filter( movie => 
-        movie.title.toLowerCase().includes(param) || movie.synopsis.toLowerCase().includes(param));
+        movie.title.toLowerCase().includes(param));
     return result;
 }
+
+
+//remover movies para pasta de dados
+//tipagem dos dados
 
 

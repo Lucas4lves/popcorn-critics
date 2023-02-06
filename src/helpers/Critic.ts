@@ -13,14 +13,6 @@ export default class Critic{
         this.impressions = this.likes + this.dislikes;
     }   
 
-    // getId()
-    // {
-    //     return this.id;
-    // }
-    // getAuthor()
-    // {
-    //     return this.author;
-    // }
     getContent()
     {
         return this.content;

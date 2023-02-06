@@ -1,4 +1,5 @@
 import { ListaDeCard } from '../../components/ListaDeCard'
+import { getMoviesByGenre } from '../../helpers/getMovies'
 import './index.css'
 
 export const User = ()=>{
@@ -18,7 +19,7 @@ export const User = ()=>{
         </div>
         <div className='favoritos'>
           <h1>Filmes favoritos</h1>
-          <ListaDeCard/>
+          <ListaDeCard lista = {getMoviesByGenre('action')}/>
         </div>
       </div>
     </>
