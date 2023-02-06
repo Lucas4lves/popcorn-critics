@@ -64,7 +64,7 @@ const movies = [
         synopsis: "A robotics engineer at a toy company builds a life-like doll that begins to take on a life of its own.",
         genre: "terror",
         rating: 6.5,
-        imgurl: "https://m.media-amazon.com/images/M/MV5BMDk4MTdhYzEtODk3OS00ZDBjLWFhNTQtMDI2ODdjNzQzZTA3XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/pt/8/80/M3GAN.png",
         comments: [],
         likes: 0
     },
@@ -74,7 +74,7 @@ const movies = [
         synopsis: "A world-weary detective is hired to investigate the murder of a West Point cadet. Stymied by the cadets' code of silence...",
         genre: "terror",
         rating: 6.6,
-        imgurl:"https://m.media-amazon.com/images/M/MV5BZDg2YThlMTItYzhhMy00OWE3LTljYTAtYTExMDM5NzRjOGFhXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg", 
+        imgUrl:"https://fr.web.img3.acsta.net/pictures/22/11/14/17/42/1700224.jpg", 
         comments: [],
         likes: 0
     },
