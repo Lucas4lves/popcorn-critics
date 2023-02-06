@@ -1,5 +1,5 @@
 import { ListaDeCard } from '../../components/ListaDeCard'
-import { getMoviesByGenre } from '../../helpers/getMovies'
+import { getMoviesByGenre } from '../../helpers/getMoviesZod' 
 import './index.css'
 
 export const User = ()=>{

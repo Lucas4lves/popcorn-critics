@@ -1,5 +1,6 @@
 import './index.css'
-import {objMovies, searchMovieByParam} from '../../helpers/getMovies'
+import {zodMovies, searchMovieByParam} from '../../helpers/getMoviesZod'
+import {z} from 'zod' 
 import { ListaDeCard } from '../ListaDeCard'
 import {useState} from 'react'
 export const Search = ()=>{

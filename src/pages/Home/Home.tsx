@@ -3,7 +3,7 @@ import { Destaques } from "../../components/Destaques/Destaques"
 import { GridDeCard } from "../../components/GridDeCard"
 import { ListaDeCard } from "../../components/ListaDeCard/index"
 import { Search } from "../../components/Search"
-import { getMoviesByGenre } from "../../helpers/getMovies"
+import { getMoviesByGenre } from "../../helpers/getMoviesZod"
 import './home.css'
 
 

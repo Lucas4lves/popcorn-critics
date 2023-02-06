@@ -1,7 +1,7 @@
 import { CardFilme } from "../CardFilme"
 import '../ListaDeCard/listadecard.css'
-import { objMovies } from '../../helpers/getMovies';
-import {getMoviesByGenre} from '../../helpers/getMovies';
+import { zodMovies } from "../../helpers/getMoviesZod";
+import {getMoviesByGenre} from "../../helpers/getMoviesZod";
 
 export const GridDeCard = ({cat}:any)=>{
   var filtrado:any = getMoviesByGenre(cat)

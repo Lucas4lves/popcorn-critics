@@ -2,9 +2,8 @@ import './filme.css'
 import { AiFillStar } from 'react-icons/ai';
 import { Comentario } from '../../components/Comentario';
 import { useParams } from 'react-router';
-import {getMoviesById} from '../../helpers/getMovies'
+import { getMoviesById } from '../../helpers/getMoviesZod';
 import Critic from '../../helpers/Critic';
-import Critics from '../../helpers/Critics';
 import { useState } from 'react';
 
 
