@@ -7,7 +7,7 @@ export const movieSchema = z.object({
     genre: z.string(),
     rating: z.number().positive(),
     imgUrl: z.string().url(),
-    critics: z.array(z.object({
+    comments: z.array(z.object({
         id: z.number(),
         content: z.string().max(250),
         author: z.string(),

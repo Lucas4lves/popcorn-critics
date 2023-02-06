@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from 'react'
+import { zodMovies } from "./helpers/getMoviesZod";
 
 import { Filme } from "./pages/Filme";
 import { Home } from "./pages/Home/Home";
@@ -8,7 +9,10 @@ import { User } from "./pages/User";
 export const AppRouter = ()=>{
   const [filtro,setFiltro] = useState('all')
   console.log(filtro);
-  
+  function mostra(){
+    console.log(zodMovies);
+  }
+  mostra()
   return(
     <main className="App">
       <BrowserRouter>

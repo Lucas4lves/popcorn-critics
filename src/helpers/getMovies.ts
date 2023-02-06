@@ -6,7 +6,7 @@ export class Movie{
     synopsis: String;
     genre: String;
     rating: Number;
-    imgUrl: any;
+    imgUrl: string;
     likes: number;
 
     constructor(id : any, 
@@ -14,7 +14,7 @@ export class Movie{
                 synopsis: String, 
                 genre: String, 
                 rating : Number, 
-                imgUrl: any, 
+                imgUrl: string, 
                 likes: number )
     {
         this.id = id;
